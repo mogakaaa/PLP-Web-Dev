@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        /* Optional CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2, p {
+            margin-bottom: 10px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        .menu-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu-list li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Image Links</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#cars">Cars</a></li>
+            <li><a href="#houses">Houses</a></li>
+            <li><a href="#business">Business</a></li>
+        </ul>
+    </nav>
+
+    <section id="cars">
+        <h2>Cars</h2>
+        <p>Explore our collection of cars:</p>
+        <a href="https://www.autotrader.com/" target="_blank">
+            <img src="cars_image.jpg" alt="Cars Image">
+        </a>
+    </section>
+
+    <section id="houses">
+        <h2>Houses</h2>
+        <p>Discover beautiful houses:</p>
+        <div class="gallery">
+            <a href="https://www.zillow.com/" target="_blank">
+                <img src="house_image_1.jpg" alt="House Image 1">
+            </a>
+            <a href="https://www.realtor.com/" target="_blank">
+                <img src="house_image_2.jpg" alt="House Image 2">
+            </a>
+            <a href="https://www.trulia.com/" target="_blank">
+                <img src="house_image_3.jpg" alt="House Image 3">
+            </a>
+        </div>
+    </section>
+
+    <section id="business">
+        <h2>Business</h2>
+        <p>Explore business-related images:</p>
+        <ul class="menu-list">
+            <li><a href="https://www.forbes.com/" target="_blank">Forbes</a></li>
+            <li><a href="https://www.entrepreneur.com/" target="_blank">Entrepreneur</a></li>
+            <li><a href="https://www.wsj.com/" target="_blank">The Wall Street Journal</a></li>
+        </ul>
+    </section>
+</body>
+</html>
